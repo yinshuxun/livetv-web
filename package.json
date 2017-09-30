@@ -1,6 +1,6 @@
 {
-  "name": "vuessr-study",
-  "version": "1.0.0",
+  "name": "livetv-web",
+  "version": "0.0.1",
   "main": "index.js",
   "author": "shuxun",
   "license": "MIT",
@@ -8,13 +8,18 @@
     "dev": "node-dev index",
     "build": "rimraf dist && npm run build:client && npm :run build:server",
     "build:client": "cross-env NODE_ENV=production webpack --config build/webpack.client.config.js --progress --hide-modules",
-    "build:server": "cross-env NODE_ENV=production webpack --config build/webpack.server.config.js --progress --hide-modules"
+    "build:server": "cross-env NODE_ENV=production webpack --config build/webpack.server.config.js --progress --hide-modules",
+    "lint": "eslint --ext .js,.vue --max-warnings 10 src",
+    "lint:fix": "eslint --ext .vue,.js --max-warnings 10 --fix src "
   },
   "dependencies": {
     "axios": "^0.16.2",
+    "babel-eslint": "^8.0.0",
     "compression": "^1.6.2",
     "cross-env": "^4.0.0",
     "es6-promise": "^4.1.0",
+    "eslint-config-alloy": "^1.2.1",
+    "eslint-config-sx": "^0.0.7",
     "express": "^4.15.2",
     "extract-text-webpack-plugin": "^2.1.0",
     "firebase": "^3.7.2",
@@ -38,6 +43,7 @@
     "babel-preset-stage-1": "^6.24.1",
     "babel-register": "^6.26.0",
     "css-loader": "^0.28.0",
+    "eslint": "^4.7.2",
     "file-loader": "^0.11.1",
     "friendly-errors-webpack-plugin": "^1.6.1",
     "glob": "^7.1.1",

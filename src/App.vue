@@ -2,9 +2,10 @@
 	<div id="app">
 		<header class="adv-header">
 			<router-link to="/live" class="fr">live</router-link>
-			<router-link to="/" class="fl"> home</router-link>
-		</header>
-		<div class="global-nav">
+				<router-link to="/" class="fl"> home</router-link>
+				</header>
+
+		<div class="global-nav" >
 			Vue ssr demo
 		</div>
 		<router-view class="view spec"></router-view>
@@ -54,3 +55,10 @@
 		line-height 1.5
 		text-align center
 </style>
+<script>
+export default {
+	data() {
+		return {};
+	}
+};
+</script>

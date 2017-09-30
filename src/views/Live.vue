@@ -85,32 +85,32 @@
 			width (1 / 4 * 100) %
 </style>
 <script>
-	import {mapGetters, mapActions} from 'vuex'
+import { mapGetters, mapActions } from 'vuex';
 
-	export default {
-		data() {
-			return {
-				msg: 'hello vue',
-				category: 'dnf',
-				platform: 'douyu'
-			}
+export default {
+	data() {
+		return {
+			msg: 'hello vue',
+			category: 'dnf',
+			platform: 'douyu'
+		};
+	},
+	computed: {
+		...mapGetters(['tvList', 'categories', 'platforms'])
+	},
+	methods: {
+		...mapActions(['getLiveList']),
+		choose(type, value) {
+			type === 'category' ? this.category = value : this.platform = value;
+			this.getLiveList(`/liveapi/${this.category}/${this.platform}`);
 		},
-		computed: {
-			...mapGetters(['tvList', 'categories', 'platforms'])
-		},
-		methods: {
-			...mapActions(['getLiveList']),
-			choose(type, value) {
-				type === 'category' ? this.category = value : this.platform = value
-				this.getLiveList(`/liveapi/${this.category}/${this.platform}`)
-			},
-			go(url) {
-				window.open(url)
-			}
-		},
-		components: {},
-		asyncData({store, route}) {
-			return store.dispatch('getLiveList', '/liveapi/dnf/douyu')
+		go(url) {
+			window.open(url);
 		}
+	},
+	components: {},
+	asyncData({ store, route }) {
+		return store.dispatch('getLiveList', '/liveapi/dnf/douyu');
 	}
+};
 </script>

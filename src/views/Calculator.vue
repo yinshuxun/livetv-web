@@ -7,23 +7,23 @@
 	</div>
 </template>
 <script>
-	import {mapGetters, mapActions} from 'vuex'
+import { mapGetters, mapActions } from 'vuex';
 
-	export default {
-		name: 'Calculator',
-		data() {
-			return {}
-		},
-		methods: {
-			...mapActions(["increment"]),
-		},
-		asyncData({store}) {
-			return store.dispatch('increment', 10)
-		},
-		computed: {
-			...mapGetters(['count'])
-		}
+export default {
+	name: 'Calculator',
+	data() {
+		return {};
+	},
+	computed: {
+		...mapGetters(['count'])
+	},
+	methods: {
+		...mapActions(['increment']),
+	},
+	asyncData({ store }) {
+		return store.dispatch('increment', 10);
 	}
+};
 </script>
 <style lang="stylus">
 	.cal-wraper

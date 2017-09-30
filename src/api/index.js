@@ -1,7 +1,8 @@
-import {mapGetters} from 'vuex'
+// @flow
+// import { mapGetters } from 'vuex';
 
-export default {
-	fetchList() {
-		const domain = mapGetters(['app'])
-	}
-}
+// export default {
+// 	fetchList() {
+// 		const domain = mapGetters(['app']);
+// 	},
+// };
