@@ -38,17 +38,17 @@ const getters = {
 	tvList(state) {
 		return initialState.tvList;
 	},
-	platforms({ platforms }) {
+	platforms({platforms}) {
 		return platforms;
 	},
-	categories({ categories }) {
+	categories({categories}) {
 		return categories;
 	},
 };
 
 export const createStore = () =>
 	new Vuex.Store({
-		state,
+		state: initialState,
 		mutations: {
 			increment(state, num) {
 				state.count += num;
@@ -66,16 +66,16 @@ export const createStore = () =>
 			},
 		},
 		actions: {
-			increment({ commit }, num) {
+			increment({commit}, num) {
 				commit('increment', num);
 			},
-			reduce({ commit }, num) {
+			reduce({commit}, num) {
 				commit('reduce', num);
 			},
-			loading({ commit }, lstate) {
+			loading({commit}, lstate) {
 				commit('loading', lstate);
 			},
-			getLiveList({ commit }, uri) {
+			getLiveList({commit}, uri) {
 				return new Promise((resolve, reject) => {
 					http.get(`${app.ctx}${uri}`).then(response => {
 						commit('getLiveList', response.data);
