@@ -24,19 +24,19 @@ const initialState = {
 
 const getters = {
 	count(state) {
-		return initialState.count;
+		return state.count;
 	},
 	steps(state) {
-		return initialState.steps;
+		return state.steps;
 	},
 	loading(state) {
-		return initialState.loading;
+		return state.loading;
 	},
 	app(state) {
-		return initialState.app;
+		return state.app;
 	},
 	tvList(state) {
-		return initialState.tvList;
+		return state.tvList;
 	},
 	platforms({platforms}) {
 		return platforms;
