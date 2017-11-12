@@ -5,11 +5,13 @@ import Vuex from 'vuex';
 
 Vue.use(Vuex);
 
-const isProd = process.env.NODE_ENV === 'production';
+const isRemote = process.env.IS_REMOTE;
 
 const app = {
-	ctx: ['http://localhost:3000', 'http://106.14.136.168:3000'][Number(isProd)],
+	ctx: ['localhost:3000', '106.14.136.168'][Number(isRemote)],
 };
+
+console.log(app.ctx)
 
 const initialState = {
 	// TODO: 初始状态

@@ -3,6 +3,9 @@
 		"name" : "liveWeb",  //名称
 		"script": "./index.js", //程序入库
 		"cwd": "./",           //根目录
+		"env": {
+			"IS_REMOTE": false
+		},
 		"watch":[
 			"bin",
 			"common",
