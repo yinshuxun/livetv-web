@@ -5,13 +5,9 @@ import Vuex from 'vuex';
 
 Vue.use(Vuex);
 
-const isRemote = process.env.IS_REMOTE;
-
 const app = {
-	ctx: ['localhost:3000', '106.14.136.168'][Number(isRemote)],
+	ctx: ['http://localhost:3000', 'http://106.14.136.168'][Number(true)],
 };
-
-console.log(app.ctx)
 
 const initialState = {
 	// TODO: 初始状态

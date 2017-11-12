@@ -4,7 +4,8 @@
 		"script": "./index.js", //程序入库
 		"cwd": "./",           //根目录
 		"env": {
-			"IS_REMOTE": false
+			"IS_REMOTE":false,
+			"NODE_ENV": "development"
 		},
 		"watch":[
 			"bin",
