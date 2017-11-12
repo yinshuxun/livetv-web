@@ -8,7 +8,7 @@ Vue.use(Vuex);
 const isProd = process.env.NODE_ENV === 'production';
 
 const app = {
-	ctx: ['http://localhost:3000', 'http://localhost.me:3000'][Number(isProd)],
+	ctx: ['http://localhost:3000', 'http://106.14.136.168:3000'][Number(isProd)],
 };
 
 const initialState = {
