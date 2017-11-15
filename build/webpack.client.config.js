@@ -2,6 +2,7 @@ const glob = require('glob')
 const webpack = require('webpack')
 const merge = require('webpack-merge')
 const base = require('./webpack.base.config')
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const SWPrecachePlugin = require('sw-precache-webpack-plugin')
 const VueSSRClientPlugin = require('vue-server-renderer/client-plugin')
 
@@ -38,8 +39,9 @@ const config = merge(base, {
 		new webpack.optimize.CommonsChunkPlugin({
 			name: 'manifest'
 		}),
-		new VueSSRClientPlugin()
-	]
+		new VueSSRClientPlugin(),
+		new ExtractTextPlugin("styles.css")
+]
 })
 
 if (process.env.NODE_ENV === 'production') {

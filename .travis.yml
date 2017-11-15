@@ -7,5 +7,8 @@ sudo: required
 
 cache: yarn
 
+node_js:
+  - '6'
+
 script:
 - yarn build
