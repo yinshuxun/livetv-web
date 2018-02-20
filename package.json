@@ -14,7 +14,7 @@
     "lint:fix": "eslint --ext .vue,.js --max-warnings 10 --fix src "
   },
   "dependencies": {
-    "axios": "^0.16.2",
+    "axios": "^0.18.0",
     "babel-eslint": "^8.0.1",
     "compression": "^1.7.1",
     "cross-env": "^5.0.5",
