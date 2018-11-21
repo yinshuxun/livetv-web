@@ -23,7 +23,7 @@
     "eslint-config-sx": "^0.1.0",
     "express": "^4.16.1",
     "firebase": "^4.8.2",
-    "lru-cache": "^4.0.2",
+    "lru-cache": "^5.1.0",
     "route-cache": "^0.4.4",
     "serve-favicon": "^2.4.5",
     "vue": "^2.5.13",
