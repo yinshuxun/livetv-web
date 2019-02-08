@@ -6743,9 +6743,10 @@ vue-router@^3.0.1:
   version "3.0.1"
   resolved "https://registry.npmjs.org/vue-router/-/vue-router-3.0.1.tgz#d9b05ad9c7420ba0f626d6500d693e60092cc1e9"
 
-vue-server-renderer@^2.5.13:
-  version "2.5.13"
-  resolved "http://registry.npm.taobao.org/vue-server-renderer/download/vue-server-renderer-2.5.13.tgz#6a0d421a0fd3e2b7357b59495d744b7e9279d68e"
+vue-server-renderer@^2.6.4:
+  version "2.6.4"
+  resolved "https://registry.yarnpkg.com/vue-server-renderer/-/vue-server-renderer-2.6.4.tgz#6e317cb3365c02d211c18360c253135980777677"
+  integrity sha512-I8Aj1XcCq2Xk0DdOOFeFNTG82DXJ3UXu/m2IBjxizByYA7ViqfYtCABnr7vYQPjqb9342MtpISyGHMSmqw1opg==
   dependencies:
     chalk "^1.1.3"
     hash-sum "^1.0.2"
