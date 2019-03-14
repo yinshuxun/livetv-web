@@ -6763,9 +6763,10 @@ vue-style-loader@^4.0.0, vue-style-loader@^4.0.1:
     hash-sum "^1.0.2"
     loader-utils "^1.0.2"
 
-vue-template-compiler@^2.5.13:
-  version "2.5.13"
-  resolved "http://registry.npm.taobao.org/vue-template-compiler/download/vue-template-compiler-2.5.13.tgz#12a2aa0ecd6158ac5e5f14d294b0993f399c3d38"
+vue-template-compiler@^2.6.9:
+  version "2.6.9"
+  resolved "https://registry.yarnpkg.com/vue-template-compiler/-/vue-template-compiler-2.6.9.tgz#26600415ff81a7a241aebc2d4e0abaa0f1a07915"
+  integrity sha512-QgO0LSCdeH6zUMSgtqel+yDWsZWQPXiWBdFg9qzOhWfQL8vZ+ywinAzE04rm1XrWc+3SU0YAdWISlEgs/i8WWA==
   dependencies:
     de-indent "^1.0.2"
     he "^1.1.0"
@@ -6774,9 +6775,10 @@ vue-template-es2015-compiler@^1.6.0:
   version "1.6.0"
   resolved "http://registry.npm.taobao.org/vue-template-es2015-compiler/download/vue-template-es2015-compiler-1.6.0.tgz#dc42697133302ce3017524356a6c61b7b69b4a18"
 
-vue@^2.5.13:
-  version "2.5.13"
-  resolved "http://registry.npm.taobao.org/vue/download/vue-2.5.13.tgz#95bd31e20efcf7a7f39239c9aa6787ce8cf578e1"
+vue@^2.6.9:
+  version "2.6.9"
+  resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.9.tgz#415c1cc1a5ed00c8f0acdd0a948139d12b7ea6b3"
+  integrity sha512-t1+tvH8hybPM86oNne3ZozCD02zj/VoZIiojOBPJLjwBn7hxYU5e1gBObFpq8ts1NEn1VhPf/hVXBDAJ3X5ljg==
 
 vuex-router-sync@^5.0.0:
   version "5.0.0"
