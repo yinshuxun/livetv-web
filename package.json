@@ -19,7 +19,7 @@
     "compression": "^1.7.1",
     "cross-env": "^5.0.5",
     "es6-promise": "^4.1.0",
-    "eslint-config-alloy": "^1.2.1",
+    "eslint-config-alloy": "^2.0.2",
     "eslint-config-sx": "^0.1.0",
     "express": "^4.16.1",
     "firebase": "^4.8.2",
