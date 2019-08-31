@@ -17,7 +17,7 @@
     "axios": "^0.18.0",
     "babel-eslint": "^8.0.1",
     "compression": "^1.7.1",
-    "cross-env": "^5.0.5",
+    "cross-env": "5.2.0",
     "es6-promise": "^4.1.0",
     "eslint-config-alloy": "^1.2.1",
     "eslint-config-sx": "^0.1.0",
