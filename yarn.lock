@@ -2409,6 +2409,11 @@ eslint-config-alloy@^1.2.1:
   version "1.3.1"
   resolved "http://registry.npm.taobao.org/eslint-config-alloy/download/eslint-config-alloy-1.3.1.tgz#c740a4c11e98b82103902f96ecc0adafed10e47b"
 
+eslint-config-alloy@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-alloy/-/eslint-config-alloy-2.0.0.tgz#6211ac501de3613d336fd588274f5f8e4946c0f9"
+  integrity sha512-pKJMDGhm9l78xl2geovq2X8rGqlzetzzvEznvR85kLFQU6NZYed/Mbxwc6lr+N4U1PLBxX3NKgqifRJRUB3sHw==
+
 eslint-config-prettier@^2.6.0:
   version "2.6.0"
   resolved "https://registry.npmjs.org/eslint-config-prettier/-/eslint-config-prettier-2.6.0.tgz#f21db0ebb438ad678fb98946097c4bb198befccc"
