@@ -45,7 +45,7 @@
     "css-loader": "^3.2.1",
     "eslint": "^5.0.0",
     "extract-text-webpack-plugin": "^3.0.1",
-    "file-loader": "^5.0.1",
+    "file-loader": "^6.0.0",
     "friendly-errors-webpack-plugin": "^1.6.1",
     "glob": "^7.1.1",
     "node-dev": "^3.1.3",
